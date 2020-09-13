@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "AssetCollectionViewCell.h"
+#import "AssetCell.h"
 
 @interface ViewController () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource> {
     NSMutableArray *imageURLs;
@@ -48,7 +48,7 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    AssetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AssetCollectionViewCell" forIndexPath:indexPath];
+    AssetCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AssetCell" forIndexPath:indexPath];
     
     NSString *imageName = imageURLs[indexPath.item];
     cell.assetImage = [UIImage imageNamed:imageName];

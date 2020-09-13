@@ -1,19 +1,18 @@
 //
-//  AssetCollectionViewCell.m
-//  LivePhotoMaker
+//  AssetCell.m
+//  PhotoViewerOBJC
 //
-//  Created by Somoy on 16/6/19.
-//  Copyright © 2019 Brain Craft Ltd. All rights reserved.
+//  Created by Somoy Das Gupta on 13/9/20.
+//  Copyright © 2020 Somoy Das Gupta. All rights reserved.
 //
 
-#import "AssetCollectionViewCell.h"
+#import "AssetCell.h"
 
-@implementation AssetCollectionViewCell
-
+@implementation AssetCell
 - (void)prepareForReuse {
     [super prepareForReuse];
     
-//    _assetImageView.image = nil;
+    //    _assetImageView.image = nil;
     _assetImage = nil;
 }
 
@@ -56,5 +55,4 @@
 - (void)hideSelectedImage {
     _selectImageView.hidden = true;
 }
-
 @end
